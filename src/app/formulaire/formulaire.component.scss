@@ -32,8 +32,7 @@ h2 {
 
 .form-group {
   margin-bottom: 20px;
-  width: 51%;
-
+  width: 80%;
 }
 .container-group{
   display: flex;
@@ -114,21 +113,21 @@ button[type="submit"]:hover {
   align-items: center;
 }
 .form__field{
-  width: 50%;
+  width: 80%;
 }
 .button__submit {
-    position: relative;
-    display: inline-block;
-    margin: 1rem;
-    /* padding: 1rem 2rem; */
-    font-size: 1.2rem;
-    color: #000;
-    text-transform: uppercase;
-    border: 2px solid #878787;
-    border-radius: 0.5rem;
-    background-color: transparent;
-    box-shadow: 0 0 0 0 transparent;
-    transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  margin: 1rem;
+  font-size: 1.2rem;
+  color: #000;
+  text-transform: uppercase;
+  border: 2px solid #878787;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  box-shadow: 0 0 0 0 transparent;
+  transition: all 0.3s ease;
+  margin-left: 62.5%;
   
   &:hover {
     transform: translate3d(0, -5px, 0);
