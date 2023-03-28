@@ -10,6 +10,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-image: url(../src/assets/img/dragon-scales.svg);
+  background-size: cover;
   height: 100vh;
   
 }

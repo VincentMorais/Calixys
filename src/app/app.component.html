@@ -4,5 +4,7 @@
 </header>
 </div>
 <div>
-  <router-outlet></router-outlet>
+  <div [@routeAnimations]="o.isActivated ? o.activatedRouteData['animation'] : ''">
+    <router-outlet #o="outlet"></router-outlet>
+  </div>
 </div>

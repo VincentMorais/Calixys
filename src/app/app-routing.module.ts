@@ -1,18 +1,24 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TableauComponent } from './tableau/tableau.component';
 import { FormulaireComponent } from './formulaire/formulaire.component';
+import { TableauComponent } from './tableau/tableau.component';
 
 const routes: Routes = [
-  { path: 'formulaire', component: FormulaireComponent },
-  
-
-
-  { path: 'tableau', pathMatch: 'full', component: TableauComponent },
-  {path: '', redirectTo: 'formulaire', pathMatch: 'full' },
-  { path: '**', redirectTo: 'tableau' }
-
-
+  {
+    path: 'formulaire',
+    component: FormulaireComponent,
+    data: {
+      animation: 'FormulairePage'
+    }
+  },
+  {
+    path: 'tableau',
+    component: TableauComponent,
+    data: {
+      animation: 'TableauPage'
+    }
+  },
+  // Autres définitions de routes
 ];
 
 @NgModule({
