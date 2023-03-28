@@ -1,0 +1,49 @@
+
+<form class="form">
+
+  
+  <div class="container-form">
+      <div class="container-logo">
+    <img class="logo" src="../../assets/img/logo-calixys-300.png.png" alt="">
+  </div>
+    <div class="container-inscription">
+      <h2>Inscription</h2>
+      <div class="container-group">
+        <div class="form-group">
+          <label for="nom">Nom*</label>
+          <input type="text" id="nom" name="nom" minlength="2" maxlength="20" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="prenom">Prénom*</label>
+          <input type="text" id="prenom" name="prenom" minlength="2" maxlength="20" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="email">Email*</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="dateNaissance">Date de naissance*</label>
+          <input type="date" id="dateNaissance" name="dateNaissance" required>
+        </div>
+      
+        <div class="form__field">
+          <label for="motDePasse">Mot de passe*</label>
+          <input class="form__input" type="password" id="motDePasse" name="motDePasse" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^\w\d\s:])([^\s]){8,}$" required 
+            oninvalid="this.setCustomValidity('Le mot de passe doit contenir des caractères spéciaux.')" 
+            oninput="setCustomValidity('')" 
+            
+          >
+        </div>
+        
+
+  </div>
+  <div class="button__submit">
+    <button type="submit">S'inscrire</button>
+  </div>
+  </div>
+</div>
+
+  </form>

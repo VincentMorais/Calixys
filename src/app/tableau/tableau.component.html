@@ -1,0 +1,33 @@
+<table>
+    <thead>
+      <tr>
+        <th class="haut-gauche">#</th>
+        <th>Compte de référence</th>
+        <th>Date</th>
+        <th>Montant</th>
+        <th>Devise</th>
+        <th>Libellé 1</th>
+        <th>Libellé 2</th>
+        <th>Rapproché</th>
+        <th>Pièce jointe</th>
+        <th class="actions">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of myData; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ data.compte }}</td>
+        <td>{{ data.date | date: 'dd/MM/yyyy' }}</td>
+        <td>{{ data.montant }}</td>
+        <td>{{ data.devise }}</td>
+        <td>{{ data.libelle1 }}</td>
+        <td>{{ data.libelle2 }}</td>
+        <td class="boolean">{{ data.rapproche ? 'Oui' : 'Non' }}</td>
+        <td class="boolean">{{ data.pieceJointe ? 'Oui' : 'Non' }}</td>
+        <td>
+          <button class="modifier" (click)="modifierLigne(i)">Modifier</button>
+        </td>
+      </tr>
+      <td class="purple"></td>
+    </tbody>
+  </table>

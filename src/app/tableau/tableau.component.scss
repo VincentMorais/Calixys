@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+table {
+  font-family: 'Open Sans', sans-serif;
+  border-collapse: collapse;
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 100%;
+
+  
+  th, td {
+    
+    padding: 0.5rem;
+    text-align: left;
+    vertical-align: middle;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  th {
+    background-color: #5a2374; /* violet */
+    color: white;
+    font-weight: bold;
+  }
+
+  tbody {
+    tr:nth-child(even) {
+      background-color: #ececec; /* gris clair */
+    }
+    tr:nth-child(odd) {
+      background-color: #ffffff; /* blanc */
+    }
+  }
+
+  tbody tr:hover td {
+    background-color: #d8bfd8; /* violet clair */
+  }
+}
+.actions{
+  border-top-right-radius: 10px;
+}
+.haut-gauche{
+  border-top-left-radius: 10px;
+}
+.modifier{
+  padding: 8px;
+  background-color: #5a2374;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.modifier:hover{
+  background-color: #9547b9;
+}
